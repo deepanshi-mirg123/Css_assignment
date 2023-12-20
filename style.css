@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Section */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    display: flex;
+}
+
+
+.logo {
+    font-size: 3rem;
+    /* font-weight: bold; */
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+/* transition to the background color of a button */
+a {
+    /* padding: 3%; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    /* border-radius: 1%; */
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: rgb(206, 206, 194);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/* Change the background color on hover */
+a:hover {
+    color: coral;
+}
+
+/* Header section */
+
+.hero-section {
+    background-image: url('./bg_image');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    /* max-width: 60%; */
+    margin: 0 auto;
+
+}
+
+/* .hero-section h1{
+    font-size: 3rem;
+} */
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* div>h2 {
+    color: #333;
+} */
+
+.about .row {
+    animation: bottomIn 1s ease-out;
+}
+
+.content h2 {
+    color: white;
+}
+
+/* .flex-quote {
+    font-size: 1.5rem;
+    width: 100%;
+} */
+
+/* Defining alternate colours to alternate sections using nth-child property  */
+
+section:nth-child(even) {
+    background-color: black;
+}
+
+/* Style odd sections */
+section:nth-child(odd) {
+    background-color: white;
+}
+
+section {
+    padding: 10%;
+
+}
+
+
+.row {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.about .row .content {
+    width: 30%;
+}
+
+@keyframes bottomIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.about .content span {
+    font-family: cursive;
+}
+
+
+
+/* Media query for screens with a maximum width of 14000 pixels */
+@media screen and (max-width: 1400px) {
+    header {
+        font-size: 5rem;
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    img {
+        height: 250px;
+        width: 400px;
+    }
+
+    /* .about .row{
+        flex-direction: row;   
+    } */
+
+    p {
+        width: auto;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+
+/* Media query for screens with a maximum width of 1080 pixels */
+@media screen and (max-width: 1080px) {
+    header {
+        font-size: 5rem;
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    img {
+        height: 20vh;
+        width: 5vw;
+    }
+
+    p {
+        width: auto;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* Media query for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 5rem;
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    img {
+        height: 250px;
+        width: 400px;
+    }
+
+
+
+    p {
+        width: 50vw;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* Media query for screens with a minimum width of 600 pixels */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 16px;
+    }
+
+    p {
+        width: 100vw;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Imgsection Section */
+.imgsection h4 {
+    color: #b44154;
+}
+
+.imgsection h2 {
+    color: #b44154;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    border: 2px solid white;
+    height: 40vh;
+    width: 25vw;
+}
+
+.container img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* Trust Section */
+
+.trust {
+    background-image: linear-gradient(white, rgb(139, 118, 118));
+}
+
+.trust h2 {
+    color: #8d5353;
+}
+
+
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-brands {
+    margin-right: 5%;
+    font-size: 5vh;
+    transition: transform 0.8s ease;
+}
+
+.fa-brands:hover {
+    animation: roll 3s linear infinite;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 2% 3% 2% 3%;
+    background-color: #333;
+    color: #ccc;
+
+}
